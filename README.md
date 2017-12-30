@@ -1,3 +1,3 @@
 # decathloncalculator
 
-Built to run on Tomcat 8.5, tested within Eclipse Oxygen.
+Tested on Tomcat 8.5 running within Eclipse Oxygen.
