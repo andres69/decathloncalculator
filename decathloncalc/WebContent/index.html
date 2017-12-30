@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Form to create a new resource</title>
+ </head>
+<body>
+    <form name="decathlonForm" action="http://localhost:8080/decathloncalc/rest/calculator" onsubmit="return validateForm()" method="POST">
+    <label for="hundredMeterRun">100 m run (seconds)</label>
+    <input name="hundredMeterRun"/>
+    <br/>
+    <label for="longJump">Long jump (centimeters)</label>
+    <input name="longJump"/>
+    <br/>
+    <label for="shotPut">Shot put (meters)</label>
+    <input name="shotPut"/>
+    <br/>
+    <label for="highJump">High jump (centimeters)</label>
+    <input name="highJump"/>
+    <br/>
+    <label for="fourHundredMeterRun">400 m run (seconds)</label>
+    <input name="fourHundredMeterRun"/>
+    <br/>
+    <label for="hurdles">100 m hurdles (seconds)</label>
+    <input name="hurdles"/>
+    <br/>
+    <label for="discusThrow">Discus throw (meters)</label>
+    <input name="discusThrow"/>
+    <br/>
+    <label for="poleVault">Pole vault (centimeters)</label>
+    <input name="poleVault"/>
+    <br/>
+    <label for="javelinThrow">Javelin throw (meters)</label>
+    <input name="javelinThrow"/>
+    <br/>
+    <label for="oneThousandFiveHundredMeterRun">1500 m run (seconds)</label>
+    <input name="oneThousandFiveHundredMeterRun"/>
+    <br/>
+    <input type="submit" value="Calculate score"/>
+    </form>
+    <script>
+	    function validateForm() {
+	    		var hundredMeterRun = document.forms["decathlonForm"]["hundredMeterRun"].value;
+	    		var longJump = document.forms["decathlonForm"]["longJump"].value;
+	    		var shotPut = document.forms["decathlonForm"]["shotPut"].value;
+	    		var highJump = document.forms["decathlonForm"]["highJump"].value;
+	    		var fourHundredMeterRun = document.forms["decathlonForm"]["fourHundredMeterRun"].value;
+	    		var hurdles = document.forms["decathlonForm"]["hurdles"].value;
+	    		var discusThrow = document.forms["decathlonForm"]["discusThrow"].value;
+	    		var poleVault = document.forms["decathlonForm"]["poleVault"].value;
+	    		var javelinThrow = document.forms["decathlonForm"]["javelinThrow"].value;
+	    		var oneThousandFiveHundredMeterRun = document.forms["decathlonForm"]["oneThousandFiveHundredMeterRun"].value;
+	   		if (hundredMeterRun == "") {
+	        		alert("100 m run result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(hundredMeterRun))) {
+	    			alert("Please enter a valid number for 100 m run result.");
+	        		return false;
+	   		}
+	   		if (longJump == "") {
+	        		alert("Long jump result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(longJump))) {
+	    			alert("Please enter a valid number for long jump result.");
+	        		return false;
+	   		}
+	   		if (shotPut == "") {
+	        		alert("Shot put result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(shotPut))) {
+	    			alert("Please enter a valid number for shot put result.");
+	        		return false;
+	   		}
+	   		if (highJump == "") {
+	        		alert("High jump result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(highJump))) {
+	    			alert("Please enter a valid number for high jump result.");
+	        		return false;
+	   		}
+	   		if (fourHundredMeterRun == "") {
+	        		alert("400 m run result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(fourHundredMeterRun))) {
+	    			alert("Please enter a valid number for 400 m run result.");
+	        		return false;
+	   		}
+	   		if (hurdles == "") {
+	        		alert("100 m hurdles run result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(hurdles))) {
+	    			alert("Please enter a valid number for 100 m hurdles run result.");
+	        		return false;
+	   		}
+	   		if (discusThrow == "") {
+	        		alert("Discus throw result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(discusThrow))) {
+	    			alert("Please enter a valid number for discus throw result.");
+	        		return false;
+	   		}
+	   		if (poleVault == "") {
+	        		alert("Pole vault result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(poleVault))) {
+	    			alert("Please enter a valid number for pole vault result.");
+	        		return false;
+	   		}
+	   		if (javelinThrow == "") {
+	        		alert("Javelin throw result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(javelinThrow))) {
+	    			alert("Please enter a valid number for javelin throw result.");
+	        		return false;
+	   		}
+	   		if (oneThousandFiveHundredMeterRun == "") {
+	        		alert("1500 m run result cannot be empty.");
+	        		return false;
+	    		}
+	    		if (isNaN(parseFloat(oneThousandFiveHundredMeterRun))) {
+	    			alert("Please enter a valid number for 1500 m run result.");
+	        		return false;
+	   		}
+	    }
+    </script>
+</body>
+</html>
