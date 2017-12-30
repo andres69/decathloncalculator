@@ -1,8 +1,5 @@
 package andres.decathlon.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class ResultSheet {
 
 	private String hundredMeterRun;
